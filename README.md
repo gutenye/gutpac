@@ -1,0 +1,6 @@
+Usage
+------
+
+```
+$ edit proxy.pac
+```
