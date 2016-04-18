@@ -1,4 +1,4 @@
-var proxy = "PROXY 192.168.1.1:1081;", direct = "DIRECT;"
+var proxy = "PROXY 192.168.1.1:1081;", direct = "DIRECT;";
 var domains = {
   // Google
   "google.com": 1,
@@ -72,15 +72,15 @@ var domains = {
   "wp.com": 1,
   // More
   "gravatar.com": 1,
-}
+};
 function FindProxyForURL(url, host) {
-  var pos
+  var pos;
   do {
     if (domains.hasOwnProperty(host)) {
-      return domains[host] ? proxy : direct
+      return domains[host] ? proxy : direct;
     }
-    pos = host.indexOf(".") + 1
-    host = host.slice(pos)
+    pos = host.indexOf(".") + 1;
+    host = host.slice(pos);
   } while(pos>1)
-  return direct
+  return direct;
 }
