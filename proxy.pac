@@ -58,20 +58,19 @@ var domains = {
   "t.co": 1,
   "tweetdeck.com": 1,
   "twimg.com": 1,
-  // Dropbox
+  // Start
   "dropbox.com": 1,
   "dropboxusercontent.com": 1,
   "dropboxforum.com": 1,
   "dropboxstatic.com": 1,
-  // Amazon
   "amazonaws.com": 1,
   "cloudfront.net": 1,
-  // Wordpress
   "wordpress.com": 1,
   "wordpress.org": 1,
   "wp.com": 1,
-  // More
   "gravatar.com": 1,
+  "nytimes.com": 1,
+  "nyt.com": 1,
 };
 function FindProxyForURL(url, host) {
   var pos;
