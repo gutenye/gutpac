@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 
+build() {
+  source config.sh
+  sed s/PROXY_ADDRESS/$PROXY_ADDRESS/ proxy.pac > $OUTPUT/proxy.pac
+}
+
 deploy() {
   scp proxy.pac router:/www
 }
 
 case "$1" in
   d | deploy ) deploy ;;
+  b | build ) build ;;
 esac

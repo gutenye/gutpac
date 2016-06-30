@@ -1,4 +1,4 @@
-var proxy = "PROXY 192.168.1.1:1081;", direct = "DIRECT;";
+var proxy = "PROXY PROXY_ADDRESS;", direct = "DIRECT;";
 var domains = {
   // Google
   "google.com": 1,
