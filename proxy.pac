@@ -72,6 +72,7 @@ var domains = {
   "nytimes.com": 1,
   "nyt.com": 1,
   "medium.com": 1,
+  "paulgraham.com": 1,
 };
 function FindProxyForURL(url, host) {
   var pos;
