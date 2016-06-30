@@ -3,6 +3,7 @@
 build() {
   source config.sh
   sed s/PROXY_ADDRESS/$PROXY_ADDRESS/ proxy.pac > $OUTPUT/proxy.pac
+  echo "> Created $OUTPUT/proxy.pac"
 }
 
 deploy() {
